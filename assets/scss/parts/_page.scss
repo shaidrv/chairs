@@ -1,0 +1,195 @@
+.promo {
+  height: 604px;
+  background-color: $color-green;
+  background-image: url('../images/promo-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+
+  &-container {
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    &-content {
+      width: 308px;
+      color: $color-white;
+
+      h2 {
+        font-weight: bold;
+        font-size: 48px;
+        margin: 0 0 50px 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 0 50px 0;
+      }
+
+      button {
+        background-color: $color-green;
+        color: $color-white;
+        width: 170px;
+        height: 49px;
+        font-family: 'Roboto';
+        font-size: 14px;
+        border-radius: 40px;
+        border: 2px solid $color-white;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-white;
+          color: $color-green;
+        }
+      }
+    }
+  }
+}
+
+.special-offer {
+  background-color: $color-lightgray;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 132px 0;
+
+  &-container {
+    width: 1110px;
+    height: 752.2px;
+    background-image: url('../images/truck.png');
+    background-repeat: no-repeat;
+    background-position: 925px 0;
+
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      margin: 0 0 38px 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 100px 0;
+
+      .card {
+        width: 255px;
+        background-color: $color-white;
+        text-align: center;
+        color: $color-black;
+
+        img {
+          margin: 25px 0 20px 0;
+        }
+
+        h3 {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        .price {
+          font-size: 21px;
+          font-weight: 500;
+          margin: 20px 0;
+        }
+
+        button {
+          font-family: 'Roboto';
+          font-size: 14px;
+          width: 130px;
+          height: 35px;
+          border-radius: 30px;
+          background-color: $color-green;
+          color: $color-white;
+          border: 2px solid $color-green;
+          margin: 0 0 25px 0;
+          transition: all 0.5s ease;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $color-white;
+            color: $color-green;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 132px 0;
+
+  .bonus {
+    width: 540px;
+    background-color: $color-green;
+    background-image: url('../images/envelope.svg');
+    background-repeat: no-repeat;
+    background-position: 355px 36px;
+    padding: 25px 0 35px 40px;
+
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+      color: $color-white;
+    }
+
+    h4 {
+      font-size: 14px;
+      line-height: 20px;
+      color: $color-white;
+    }
+
+    input {
+      border: none;
+      width: 225px;
+      height: 35px;
+      color: $color-black;
+      border-radius: 30px;
+      padding: 9px 0 9px 25px;
+      font-size: 14px;
+      outline: none;
+      font-family: inherit;
+    }
+  }
+
+  .store-map {
+    width: 540px;
+    background-color: $color-green;
+    padding: 35px 0 35px 40px;
+
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+      color: $color-white;
+    }
+
+    h4 {
+      font-size: 14px;
+      line-height: 20px;
+      color: $color-white;
+    }
+
+    button {
+      width: 170px;
+      height: 35px;
+      border: 2px solid $color-white;
+      background-color: $color-green;
+      color: $color-white;
+      border-radius: 30px;
+      font-family: 'Roboto';
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-green;
+      }
+    }
+  }
+}

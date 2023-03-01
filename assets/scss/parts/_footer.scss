@@ -1,0 +1,100 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background-color: $color-white;
+  height: 120px;
+
+  &-content {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icons {
+      width: 420px;
+
+      img,
+      svg {
+        margin: 0 16px;
+      }
+
+      a {
+        &:hover {
+          svg {
+            path {
+              fill: $color-darkgreen;
+            }
+          }
+        }
+      }
+    }
+
+    span {
+      font-size: 14px;
+      color: $color-black;
+    }
+
+    a {
+      font-size: 16px;
+      line-height: 19px;
+      color: $color-black;
+      text-decoration: none;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+
+    button {
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-black;
+      background-color: $color-white;
+      width: 170px;
+      height: 40px;
+      border-radius: 40px;
+      border: 2px solid $color-green;
+      margin: 0 0 0 40px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: $color-green;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.footer-bottom-line {
+  height: 64px;
+  background-color: $color-lightgray;
+  display: flex;
+  justify-content: center;
+
+  &-content {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  span {
+    color: $color-gray;
+    font-size: 12px;
+  }
+
+  a {
+    color: $color-gray;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+}
