@@ -7,8 +7,14 @@
   display: flex;
   justify-content: center;
 
+  @include mobile {
+    background-position: calc(50% - 196px) 50%;
+  }
+
   &-container {
-    width: 1110px;
+    max-width: 1110px;
+    padding: 0 15px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -56,29 +62,62 @@
   justify-content: center;
   padding: 80px 0 132px 0;
 
+  @include mobile {
+    padding: 50px 0 0 0;
+  }
+
   &-container {
-    width: 1110px;
-    height: 752.2px;
+    max-width: 1110px;
+    width: 100%;
+    padding: 0 15px;
     background-image: url('../images/truck.png');
     background-repeat: no-repeat;
-    background-position: 925px 0;
+    background-position: 904px 0;
 
     h2 {
       font-weight: 700;
       font-size: 24px;
       margin: 0 0 38px 0;
+
+      @include mobile {
+        text-align: center;
+      }
+      @include tablets {
+        text-align: center;
+      }
     }
 
     .cards {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       margin: 0 0 100px 0;
+
+      @include mobile {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 50px 0;
+      }
+
+      @include tablets {
+        display: flex;
+        justify-content: center;
+      }
 
       .card {
         width: 255px;
         background-color: $color-white;
         text-align: center;
         color: $color-black;
+        margin: 0 0 15px 0;
+
+        @include tablets {
+          margin-right: 10px;
+        }
+
+        @include mobile {
+          margin-right: 10px;
+        }
 
         img {
           margin: 25px 0 20px 0;
@@ -123,14 +162,45 @@
   display: flex;
   justify-content: space-between;
   margin: 0 0 132px 0;
+  max-width: 1110px;
+  width: 100%;
+  padding: 0 15px;
+
+  @include mobile {
+    margin-bottom: 50px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  @include tablets {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 
   .bonus {
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     background-color: $color-green;
     background-image: url('../images/envelope.svg');
     background-repeat: no-repeat;
-    background-position: 355px 36px;
+    background-position: 309px 36px;
     padding: 25px 0 35px 40px;
+    margin: 0 15px 0 0;
+
+    @include mobile {
+      margin: 0 0 15px 0;
+      background-position: 94% 57%;
+      width: 100%;
+    }
+
+    @include tablets {
+      margin: 0 0 15px 0;
+      background-position: 94% 57%;
+      width: 100%;
+    }
 
     h3 {
       font-weight: 700;
@@ -146,7 +216,7 @@
 
     input {
       border: none;
-      width: 225px;
+      max-width: 225px;
       height: 35px;
       color: $color-black;
       border-radius: 30px;
@@ -158,7 +228,8 @@
   }
 
   .store-map {
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     background-color: $color-green;
     padding: 35px 0 35px 40px;
 

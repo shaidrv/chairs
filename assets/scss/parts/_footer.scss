@@ -4,21 +4,57 @@
   background-color: $color-white;
   height: 120px;
 
+  @include mobile {
+    height: unset;
+  }
+
+  @include tablets {
+    height: unset;
+  }
+
   &-content {
-    width: 1110px;
+    max-width: 1110px;
+    width: 100%;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    @include tablets {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+
     .icons {
-      width: 420px;
+      max-width: 420px;
+
+      @include mobile {
+        margin: 15px;
+      }
 
       img,
       svg {
         margin: 0 16px;
+
+        @include mobile {
+          margin: 10px;
+        }
+
+        @include tablets {
+          margin: 15px 20px;
+        }
       }
 
       a {
+        text-decoration: none;
         &:hover {
           svg {
             path {
@@ -32,9 +68,18 @@
     span {
       font-size: 14px;
       color: $color-black;
+      display: block;
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
+
+      @include tablets {
+        margin-bottom: 20px;
+      }
     }
 
-    a {
+    .link {
       font-size: 16px;
       line-height: 19px;
       color: $color-black;
@@ -43,6 +88,11 @@
 
       &:hover {
         color: $color-green;
+      }
+
+      @include mobile {
+        display: block;
+        margin-bottom: 20px;
       }
     }
 
@@ -64,6 +114,10 @@
         background-color: $color-green;
         color: $color-white;
       }
+
+      @include mobile {
+        margin: 0;
+      }
     }
   }
 }
@@ -74,8 +128,15 @@
   display: flex;
   justify-content: center;
 
+  @include mobile {
+    padding: 20px 15px;
+    height: unset;
+  }
+
   &-content {
-    width: 1110px;
+    max-width: 1110px;
+    width: 100%;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,6 +145,10 @@
   span {
     color: $color-gray;
     font-size: 12px;
+
+    @include mobile {
+      padding-right: 15px;
+    }
   }
 
   a {
